@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantics</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        header{
+            background-color: darkblue;
+            color: aliceblue;
+            padding: 20px;
+            display: flex;
+        }
+        nav a{
+            color: aliceblue;
+        }
+        /*header h1, header nav{           
+            display: inline-block;
+            vertical-align: middle;
+        }*/
+        header h1{
+            width: 40%;
+            margin: 10px;
+        }
+        header nav{
+            text-align: right;
+            width: 50%;           
+        }
+        nav ul, aside ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 10px;
+        }
+        article,  aside, .card, .img-card{            
+            /*display: inline-block;*/
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 3px 5px 3px 5px rgba(0, 0, 100, 0.4);
+        }
+        /*aside{
+            width: 30%;
+        }
+        article{
+            width: 60%;
+        }*/
+        .card{
+           /* width: 22%;*/
+            border-left: 10Px solid rgb(10, 10, 107);
+        }
+        footer{
+            background-color: darkblue;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+        section{
+            display: flex;
+        }
+        h2, h3{
+            text-align: center;
+        }
+        .img-card{
+            margin-left: 25px;
+        }
+        a:hover{
+            color: red;
+            background-color: aliceblue;
+            border-radius: 5px;
+        }
+        article:hover, aside:hover,.card:hover, .img-card:hover{
+            transform: scale(1.02);
+            box-shadow: 3px 5px 3px 5px rgba(236, 93, 141, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+        <img src="images/flower11.jpg" alt="logo" width="50px" height="50px" style="border-radius: 50%;">
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>  
+        </nav>  
+   </header>
+   <main>
+        <section>
+            <article>
+            <h2>Article</h2><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, facere! Eum aperiam sapiente, minus vitae eaque unde deserunt nemo dolorem vero ea, natus quia tenetur quisquam officia, voluptatibus eos eius.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, facere! Eum aperiam sapiente, minus vitae eaque unde deserunt nemo dolorem vero ea, natus quia tenetur quisquam officia, voluptatibus eos eius.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, facere! Eum aperiam sapiente, minus vitae eaque unde deserunt nemo dolorem vero ea, natus quia tenetur quisquam officia, voluptatibus eos eius.</p>
+        </article>
+        <aside>
+            <h2>Annoumcements</h2><br>
+            <ul>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Festival</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </aside>
+        </section>
+        
+        <section>
+            <div class="img-card">
+                <img src="images/flower11.jpg" alt="flowers" width="100%"><br>
+                <h3>Flowers</h3>
+            </div>
+            <div class="img-card">
+                <img src="images/flower11.jpg" alt="flowers" width="100%"><br>
+                <h3>Flowers</h3>
+            </div>
+            <div class="img-card">
+                <img src="images/flower11.jpg" alt="flowers" width="100%"><br>
+                <h3>Flowers</h3>
+            </div>
+            <div class="img-card">
+                <img src="images/flower11.jpg" alt="flowers" width="100%"><br>
+                <h3>Flowers</h3>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+                <h2>Title</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsum adipisci quisquam sit, quam rerum culpa quae facere deleniti repellat hic aut consequuntur odit, dolor est! Provident aperiam nisi nemo.</p><br>
+            </div>
+            <div class="card">
+                <h2>Title</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsum adipisci quisquam sit, quam rerum culpa quae facere deleniti repellat hic aut consequuntur odit, dolor est! Provident aperiam nisi nemo.</p><br>
+            </div>
+            <div class="card">
+                <h2>Title</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsum adipisci quisquam sit, quam rerum culpa quae facere deleniti repellat hic aut consequuntur odit, dolor est! Provident aperiam nisi nemo.</p><br>
+            </div>
+            <!--<div class="card">
+                <h2>Title</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsum adipisci quisquam sit, quam rerum culpa quae facere deleniti repellat hic aut consequuntur odit, dolor est! Provident aperiam nisi nemo.</p>
+            </div>-->
+        </section>
+   </main>
+   <footer>Copyright &copy; 2025 | My Website</footer>
+</body>
+</html>
